@@ -35,7 +35,7 @@ def CheckDistance():
 while True:
     distance = CheckDistance()
     print(distance)
-    if CheckDistance() < 2500:
+    if distance < 2500:
         speaker.duty_u16(3000)
         speaker.freq(1700)
         utime.sleep(0.05)
